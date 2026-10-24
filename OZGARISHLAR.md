@@ -101,6 +101,33 @@
 
 ---
 
+## 9-batch — Dizayn tizimi (professional sayqal)
+
+Dizayn tahlili (`DIZAYN-TAHLIL.md`, 7,6/10) asosida P1–P3 barcha bandlar tuzatildi:
+
+**P1 — shkalalar (design system):**
+- **Tip-shkala:** 30+ o'lcham → 12 qiymat: `12/13/14/15/16/18/20/24` + display `32/40/46/52` (+ clamp). Yarim qadamlar (10.5–17.5) yo'q; mikro-matn minimum 12px.
+- **Radius-shkala:** 24 qiymat → 6 token: `--r-xs:4 / --r-sm:8 / --r-md:12 / --r:18 / --r-lg:24 / --r-pill:999` (`99px` dublikat yo'q).
+- **Oraliq-shkala:** gap/padding/margin → `{4,8,12,16,20,24,32,40,48,56,64,80,96,110,120,150}` (1px hairline bundan mustasno).
+- **Tokenlar:** `--fs-1…8`, `--shadowBtn/--shadowBtnL` (ad-hoc `color-mix` soyalar o'rniga); o'lik `--ok`/`--info` o'chirildi. Asosiy sinflar (`body, .kick, .chip, .btn, .leg`) endi `var()` bilan.
+
+**P2 — vizual:**
+- **Zebra ritm:** `N A A N A A N N A` → qat'iy almashinish `N A N A N A N A N`.
+- **Eyebrow izchillik:** `#sinov` dagi uslubsz `span.tag` → barcha bo'limlardagi `.kick` naqshiga.
+- **Roadmap affordance:** gorizontal scroll endi ko'rinadi — ingichka scrollbar (`scrollbar-color` + webkit thumb) va chekka fade-mask (`data-l/data-r` attributlari, scroll/resize'da yangilanadi).
+- **Klub bento:** chap kartadagi ~120px o'lik bo'shliq yo'q — mozaika `flex:1; grid-auto-rows:1fr` bilan kartani to'ldiradi; 10×3 kvadrat → 6×5 landscape plitka (hero matritsasi nisbati, `aspect-ratio` olib tashlandi).
+- **FAQ balansi:** 2 ustunli grid → `columns:2` (+ `break-inside:avoid`); o'qish tartibi DOM bilan moslashdi.
+- **Footer qatlami:** navy `--navy3` bant + scoped token override (`--ink/--muted/--line/--blue`) — sahifa endi vizual «yopiladi»; light va dark'da tekshirilgan.
+
+**P3 — sayqal:**
+- Light kartalar chegara/soya muvozanati saqlandi; `.flow` chizig'i animatsiya oxirida to'liq (68% = tugun markazlari 16%→84%; «shtrix» faqat animatsiya oralig'i ekan).
+- Mobil'da `.trust .sep` ajratgichlar yashirilgan (stack holatida ortiqcha edi).
+- Tugma glow-soyalari tokenlashgan.
+
+**Hajm:** 173 255 → 174 697 B raw (+1 442, tokenlar hisobiga), gzip 49 242 → 49 404 B (asl 75 672 ga nisbatan −34,7%).
+
+---
+
 ## Tekshiruv natijalari
 
 **Statik (verify.py):** 60+ assertion — hajm/siqish, id noyobligi, base64 yo'qligi, SVG belgilanishi, skip-link, canvas fallback, color-scheme, domen ishlari, statik FAQ/roadmap, schema yaroqliligi, DATA modeli (`ev`/`st`/vazn=100/matritsa 30/60), JS `d.ev` almashtiruvi.

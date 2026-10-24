@@ -3,7 +3,7 @@
 """Real brauzer (Chromium/Playwright) runtime testi.
 Ishlatish:  URL=http://127.0.0.1:8080/ python3 tests/browsertest.py
 Kerak:      pip install playwright && python3 -m playwright install chromium"""
-import os
+import os, sys
 from playwright.sync_api import sync_playwright
 
 URL = os.environ.get('URL', 'http://127.0.0.1:8080/')

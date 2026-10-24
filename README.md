@@ -23,8 +23,10 @@ Bu papka `https://raqamli-tadqiqot-v2.pages.dev/` saytining **professional daraj
 | 29 ta SVG `aria-hidden`'siz, skip-link yo'q, `.sr` ishlatilmagan, canvas fallback yo'q, dark tugma 3,91:1, mobil tugmalar 40px | Hammasi tuzatildi (WCAG 2.1 AA) |
 | ~2,5 KB o'lik CSS (eski DOM-o'yin qoldig'i) | O'chirildi, ishlatiladiganlar saqlandi |
 | 3 xil navigatsiya nomlash | Birlashtirildi; `#qoshil` qo'shildi |
+| Dizayn tizimi yo'q (30+ shrift, 24 radius, 12+ tugma kombini) | Shkalalar: tip `12–52` (12 qiymat), radius 6 token, oraliq 4px-grid; `--fs-*`, `--r-*`, `--shadowBtn*` tokenlari |
+| Zebra notekis, eyebrow ikki xil, roadmap kesilgan, footer «yopmaydi» | Zebra `NANANANAN`, yagona `.kick`, scroll fade+scrollbar, navy footer-qatlam |
 
-**Hajm:** 200 109 B → **172 647 B** raw (−13,7%) · gzip 75 672 B → **49 227 B** (−34,9%)
+**Hajm:** 200 109 B → **174 697 B** raw (−12,7%) · gzip 75 672 B → **49 404 B** (−34,7%)
 
 ---
 
