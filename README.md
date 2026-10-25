@@ -1,5 +1,14 @@
 # Raqamli Tadqiqot — tuzatilgan versiya
 
+**Joriy versiya: `v2.2.0`** (`<html data-version>` da ham belgilangan)
+
+| Tag | Commit | Tarkibi |
+|---|---|---|
+| `v1.0.0` | `dc9d855` | Asl klon (`raqamli-tadqiqot-v2.pages.dev`, o'zgartirilmagan) — `asl-klon-v1` branch |
+| `v2.0.0` | `90f671d` | P0–P2 tuzatishlar: logo, DATA modeli, SEO, a11y, o'lik CSS |
+| `v2.1.0` | `d209550` | Dizayn tizimi: tip/radius/oraliq shkalalari, zebra, roadmap, bento, footer |
+| `v2.2.0` | joriy | Reliz paketi: og.webp (−90%), Twitter Card, `_headers` CSP, cache siyosati |
+
 Sayt: **Raqamli Tadqiqot — AI dalillarini o'lchaydigan talabalar tashabbusi** (TDIU).
 Bu papka `https://raqamli-tadqiqot-v2.pages.dev/` saytining **professional darajada qayta ishlangan** kloni.
 

@@ -101,6 +101,18 @@
 
 ---
 
+## v2.2.0 — Reliz paketi (2026-10-25)
+
+- **`og.png` (395 347 B) → `og.webp` (39 568 B), −90%** — `og:image`, `twitter:image` va JSON-LD `image` yangilandi; 1200×630 saqlandi.
+- **Twitter Card meta** qo'shildi (`summary_large_image` + title/description).
+- **`_headers` (Cloudflare Pages):** CSP (`default-src 'self'`, `connect-src` faqat backend API), `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, `frame-ancestors 'none'`; statik assetlarga immutable cache.
+- **Versiya belgisi:** `<html data-version="2.2.0">`; git tag'lar: `v1.0.0` (asl klon), `v2.0.0` (P0–P2 fix), `v2.1.0` (dizayn tizimi), `v2.2.0` (reliz paketi).
+- `tests/verify.py` ga 6 ta yangi assertion (og.webp, twitter meta, data-version, _headers).
+
+**Bajarilmadi (ataylab):** apostrof unifikatsiyasi (statik va JS-render kontent aralashuvi xavfi), faylni modullarga ajratish (yagona fayl = deploy oddiyligi), `st`/`RT_ADMIN_URL` (jamoa ma'lumoti kerak).
+
+---
+
 ## 9-batch — Dizayn tizimi (professional sayqal)
 
 Dizayn tahlili (`DIZAYN-TAHLIL.md`, 7,6/10) asosida P1–P3 barcha bandlar tuzatildi:
